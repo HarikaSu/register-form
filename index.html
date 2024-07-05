@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        [class]{
+            border: 2px solid red;
+            height:450px;
+            width:400px;
+            background-color: pink;
+            position: relative;
+            top:150px;
+            left:200px;
+        }
+        [id="fname"]{
+            background-color: blanchedalmond;
+            
+        }
+        [value="Geetha"]{
+            border:2px solid red;
+        }
+        [type="text"]{
+            color:blue;
+        }
+        
+        [for="fname"]{
+            color:green;
+            font-style: italic;
+            
+        }
+        [id|="sname"]{
+            border:2px solid red;
+            background-color: blanchedalmond;
+        }
+        [type|="text"]{
+            color:blue;
+        }
+        [for|="sname"]{
+            color: green;
+            font-style:italic;
+        }
+        [type="text"]{
+            color:blue;
+        }
+        [id="regnum"]{
+            border:2px solid red;
+            background-color: blanchedalmond;
+        }
+        [for|="regnum"]{
+            color: green;
+            font-style: italic;
+        }
+        [for="mail"]{
+            color:green;
+            font-style: italic;
+        }
+        [ id="mail"]{
+            border: 2px solid red;
+            background-color: blanchedalmond;
+        }
+        [type="email"]{
+            color:blue;
+        }
+        [for|="mnumber"]{
+            color: green;
+            font-style: italic;
+        }
+        [type="tel"]{
+            color:blue;
+        }
+        [ id="mbl"]{
+          border:2px solid red;
+          background-color: blanchedalmond;
+        }
+        [for="pswrd"]{
+          color: green;
+          font-style: italic;
+        }
+        [id="password"]{
+          border: 2px solid red;
+          background-color: blanchedalmond;
+        }
+        [type="password"]{
+          color:black;
+        }
+        [for^=" d"]{
+          color:green ;
+          font-style: italic;
+        }
+        [type*="date"]{
+           color: blue;
+        }
+        [id="d"]{
+          border: 2px solid red;
+          background-color: blanchedalmond;
+        }
+        [for="t"]{
+          color: green;
+          font-style: italic;
+        }
+        [type="time"]{
+          color: blue;
+        }
+        [type="file"]{
+          background-color: aqua;
+        }
+        [id="c"]{
+          border: 2px solid rgb(0, 255, 30);
+          background-color: blue;
+        }
+        [type="submit"]{
+          background-color: greenyellow;
+        }
+ </style>
+
+  </head>
+  <body>
+    
+    <div class="md">
+    <form method="get">
+      <label for="fname">Firstname:</label>
+      <br /><input
+        id="fname"
+        value="Geetha"
+        readonly
+        required
+        type="text"
+        name="fname"
+    />
+      <br /><label for="sname">Secondname:</label> <br /><input
+        placeholder="eg:Harika"
+        id="sname-ls"
+        type="text-ts"
+        name="sname-ns"
+        
+      />
+      <br /><label for="regnum">Register Number</label> <br /><input
+        type="text"
+        id="regnum"
+        pattern="[0-9]{1,15}"
+      />
+      <br /><label for="mail">email:</label> <br /><input
+        id="mail"
+        type="email"
+        
+      />
+      <br /><label for="mnumber-no">mobile number</label> <br /><input
+        type="tel"
+        name="mobile"
+        id="mbl"
+        pattern="[0-9]{4,}"
+      />
+      <br /><label for="pswrd">Enter password</label> <br /><input
+        autofocus="password"
+        id="password"
+        name="pswd"
+        type="password"
+      
+      />
+      <br/><label for=" d">Date</label>
+      <br/><input id="d" type="date"/>
+      <br/><label for="t">Time</label>
+      <br/><input id="t" type="time"/>
+      <br/><input id="f" type="file"/>
+      <br/><input id="c" type="color"/>
+      <input type="submit" />
+      
+      </div>
+      <div>
+        <h2 style="color: blue; font-style: italic; margin-top: -400px; margin-left:280px ;">REGISTER FORM</h2>
+      </div>
+
+    </form>
+  </body>
+</html>
